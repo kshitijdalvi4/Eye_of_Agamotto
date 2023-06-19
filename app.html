@@ -59,7 +59,41 @@
 </nav>
 
     <main class="flex-shrink-0">  <!--Shrink Helps with the footer-->
-      <div class="container"></div>
+      <div class="container ">
+        <div class="row">
+            <div class="col mt-5 px-4">
+                <h5 class="border-1 border=bottom border-success"> Enter a String to Reverse</h5>
+                <form class="row gx-1 gy-1">
+                    <div class="col">
+                  <input id="inputString" type="text" class="form-control" placeholder="Enter a String" aria-label="String">
+                  </div>
+                  <div class="col-12 mt-3">
+                    <button type="button" id="btnSubmit" class="btn btn-success rounded-pill shadow-lg"> Reverse the String</button>
+                  </div>
+
+                  <div class="alert alert-success mt-5 shadow-sm  invisible fade show" id="alert_info" role="alert">
+                    <h4 class="alert-heading">Snap!</h4>
+
+                    <p>Time Stone has reversed the string</p>
+                     <hr>
+                    <p class="mb-0" id="msg">   </p>
+                  </div>
+                </form>
+            </div>
+              <div class="col-lg-4 col-12 order-first order-lg-last mt-5">
+                <h1>Eye of Agamotto </h1>
+                <h4 class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quisquam vel autem atque et.
+                     Molestiae laborum, repellat quae ex est sint, eligendi hic dicta, tenetur nobis officiis alias aliquid perferendis.
+
+                </h4>
+                <h2 class="mt-5">Instructions</h2>
+                <p> Enter a String. Press the button</p>
+            </div>
+
+            
+        </div>
+      </div>
     </main>
     <footer class="footer mt-auto py-3 bg-light sticky-footer "> 
         <div class="container-fluid"> 
@@ -89,6 +123,10 @@
 
  </script>
   <script src="/JS/site.js"></script>
+
+  <script> document.getElementById("btnSubmit").addEventListener("click",getVal)</script>
+  <script>docum<ent.addEventListener("keypress",function(Enter){},getVal)</script>
+
   
 
  
